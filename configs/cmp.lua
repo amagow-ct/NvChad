@@ -1,6 +1,12 @@
 local opts = require("plugins.configs.cmp")
 local cmp = require("cmp")
 
+-- backward compatibility
+if not table.unpack then
+	---@diagnostic disable-next-line: deprecated
+	table.unpack = unpack
+end
+
 local has_words_before = function()
 	if vim.api.nvim_buf_get_option(0, "buftype") == "prompt" then
 		return false
