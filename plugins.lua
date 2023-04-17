@@ -80,7 +80,8 @@ local plugins = {
 			},
 		},
 		opts = function()
-			return require("custom.configs.cmp")
+			local opts = require("custom.configs.cmp")
+			return opts
 		end,
 	},
 }

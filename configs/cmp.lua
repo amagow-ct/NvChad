@@ -18,7 +18,7 @@ end
 -- add copilot source
 table.insert(opts.sources, { name = "copilot" })
 
--- update mapping
+-- change mapping
 opts.mapping = {
 	["<C-p>"] = cmp.mapping.select_prev_item(),
 	["<C-n>"] = cmp.mapping.select_next_item(),
