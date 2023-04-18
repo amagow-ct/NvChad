@@ -25,4 +25,34 @@ M.fugitive = {
 		["<leader>gg"] = { "<Cmd>Git<CR>", "Open fugitive" },
 	},
 }
+
+M.copilot = {
+	n = {
+		["<leader>po"] = { "<Cmd>Copilot panel<CR>", "Open panel copilot" },
+		["<leader>pa"] = {
+			function()
+				require("copilot.panel").accept()
+			end,
+			"accept suggestion copilot",
+		},
+		["<leader>pn"] = {
+			function()
+				require("copilot.panel").jump_next()
+			end,
+			"Next suggestion copilot",
+		},
+		["<leader>pp"] = {
+			function()
+				require("copilot.panel").jump_prev()
+			end,
+			"Previous suggestion copilot",
+		},
+		["<leader>pr"] = {
+			function()
+				require("copilot.panel").refresh()
+			end,
+			"Refresh panel copilot",
+		},
+	},
+}
 return M
