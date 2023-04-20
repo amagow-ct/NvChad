@@ -51,6 +51,22 @@ opts.mapping = {
 			fallback()
 		end
 	end, { "i", "s" }),
+	["<C-k>"] = cmp.mapping({
+		i = function()
+			if cmp.visible() then
+				cmp.abort()
+			else
+				cmp.complete()
+			end
+		end,
+		c = function()
+			if cmp.visible() then
+				cmp.close()
+			else
+				cmp.complete()
+			end
+		end,
+	}),
 }
 
 -- update sorting
