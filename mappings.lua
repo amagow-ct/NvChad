@@ -55,4 +55,15 @@ M.copilot = {
 		},
 	},
 }
+
+M.telescope = {
+	n = {
+		["<leader>fw"] = {
+			function()
+				require("telescope").extensions.live_grep_args.live_grep_args()
+			end,
+			"live grep",
+		},
+	},
+}
 return M

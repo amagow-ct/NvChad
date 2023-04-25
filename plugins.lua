@@ -84,6 +84,36 @@ local plugins = {
 			return opts
 		end,
 	},
+
+	{
+		"nvim-telescope/telescope.nvim",
+		dependencies = {
+			"nvim-telescope/telescope-live-grep-args.nvim",
+		},
+		cmd = "Telescope",
+		init = function()
+			require("core.utils").load_mappings("telescope")
+		end,
+
+		opts = function()
+			local opts = require("plugins.configs.telescope")
+			local custom_opts = require("custom.configs.telescope")
+			vim.tbl_deep_extend("force", opts, custom_opts)
+			return opts
+		end,
+
+		config = function(_, opts)
+			dofile(vim.g.base46_cache .. "telescope")
+			local telescope = require("telescope")
+			telescope.setup(opts)
+			print(opts)
+
+			-- load extensions
+			for _, ext in ipairs(opts.extensions_list) do
+				telescope.load_extension(ext)
+			end
+		end,
+	},
 }
 
 return plugins
