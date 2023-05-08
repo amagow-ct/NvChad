@@ -65,7 +65,7 @@ M.mason = {
     "golines",
 
     -- web dev stuff
-    "vuels",
+    "vue-languge-server",
     "css-lsp",
     "html-lsp",
     "typescript-language-server",
@@ -94,6 +94,7 @@ M.mason = {
     "bufls",
 
     -- yaml
+    "yaml-language-server",
     "yamlfmt",
   },
 }
