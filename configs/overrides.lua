@@ -1,118 +1,118 @@
 local M = {}
 
 M.treesitter = {
-  ensure_installed = {
-    "vim",
+	ensure_installed = {
+		"vim",
 
-    -- lua
-    "lua",
+		-- lua
+		"lua",
 
-    -- web
-    "html",
-    "css",
+		-- web
+		"html",
+		"css",
 
-    -- js
-    "javascript",
-    "typescript",
-    "tsx",
-    "vue",
+		-- js
+		"javascript",
+		"typescript",
+		"tsx",
+		"vue",
 
-    -- c
-    "c",
+		-- c
+		"c",
 
-    -- markdown
-    "markdown",
-    "markdown_inline",
+		-- markdown
+		"markdown",
+		"markdown_inline",
 
-    -- go
-    "go",
-    "gomod",
-    "gosum",
-    "gowork",
+		-- go
+		"go",
+		"gomod",
+		"gosum",
+		"gowork",
 
-    -- make
-    "make",
+		-- make
+		"make",
 
-    -- rust
-    "rust",
+		-- rust
+		"rust",
 
-    -- sql
-    "sql",
+		-- sql
+		"sql",
 
-    -- toml
-    "toml",
+		-- toml
+		"toml",
 
-    -- yaml
-    "yaml",
-  },
-  indent = {
-    enable = true,
-    -- disable = {
-    --   "python"
-    -- },
-  },
+		-- yaml
+		"yaml",
+	},
+	indent = {
+		enable = true,
+		-- disable = {
+		--   "python"
+		-- },
+	},
 }
 
 M.mason = {
-  ensure_installed = {
-    -- lua stuff
-    "lua-language-server",
-    "stylua",
+	ensure_installed = {
+		-- lua stuff
+		"lua-language-server",
+		"stylua",
 
-    -- go
-    "gopls",
-    "gofumpt",
-    "golines",
+		-- go
+		"gopls",
+		"gofumpt",
+		"golines",
 
-    -- web dev stuff
-    "vue-languge-server",
-    "css-lsp",
-    "html-lsp",
-    "typescript-language-server",
-    "deno",
-    "prettier",
+		-- web dev stuff
+		"vue-languge-server",
+		"css-lsp",
+		"html-lsp",
+		"typescript-language-server",
+		"deno",
+		"prettier",
 
-    -- c/cpp stuff
-    "clangd",
-    "clang-format",
+		-- c/cpp stuff
+		"clangd",
+		"clang-format",
 
-    -- rust stuff
-    "rust_analyzer",
-    "rustfmt",
+		-- rust stuff
+		"rust_analyzer",
+		"rustfmt",
 
-    -- bash
-    "bashls",
+		-- bash
+		"bashls",
 
-    -- docker
-    "dockerls",
-    "docker_compose_language_service",
+		-- docker
+		"dockerls",
+		"docker_compose_language_service",
 
-    -- sql
-    "sqlls",
+		-- sql
+		"sqlls",
 
-    -- protobuf
-    "bufls",
+		-- protobuf
+		"bufls",
 
-    -- yaml
-    "yaml-language-server",
-    "yamlfmt",
-  },
+		-- yaml
+		"yaml-language-server",
+		"yamlfmt",
+	},
 }
 
 -- git support in nvimtree
 M.nvimtree = {
-  git = {
-    enable = true,
-  },
+	git = {
+		enable = true,
+	},
 
-  renderer = {
-    highlight_git = true,
-    icons = {
-      show = {
-        git = true,
-      },
-    },
-  },
+	renderer = {
+		highlight_git = true,
+		icons = {
+			show = {
+				git = true,
+			},
+		},
+	},
 }
 
 return M

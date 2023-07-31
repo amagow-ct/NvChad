@@ -41,9 +41,6 @@ local sources = {
 	-- rust
 	b.formatting.rustfmt,
 
-	-- ruby
-	b.formatting.rubyfmt,
-
 	-- yamlfmt
 	b.formatting.yamlfmt,
 
